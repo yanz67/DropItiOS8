@@ -7,7 +7,7 @@
 //
 
 #import "DropitBehavior.h"
-@interface DropitBehavior()
+@interface DropitBehavior() <UICollisionBehaviorDelegate>
 
 @property (strong, nonatomic) UIGravityBehavior *gravityBehavior;
 @property (strong, nonatomic) UICollisionBehavior *collider;
@@ -48,6 +48,40 @@
     return _gravityBehavior;
 }
 
+-(void)collisionBehavior:(UICollisionBehavior *)behavior endedContactForItem:(id<UIDynamicItem>)item1 withItem:(id<UIDynamicItem>)item2
+{
+    [self allignItem:item1];
+    [self allignItem:item2];
+}
+
+static const CGFloat  CLOSE_TO_ALIGNMENT = 4.0;
+
+
+-(void)allignItem:(id <UIDynamicItem>)item
+{
+    [UIView animateWithDuration:0.3 animations:^{
+        CGFloat currentItemWidth = item.bounds.size.width;
+        CGFloat currentItemLeftEdge = (item.center.x - currentItemWidth / 2);
+        CGFloat newItemLeftEdge = round(currentItemLeftEdge / currentItemWidth) * currentItemWidth;
+        if(ABS(currentItemLeftEdge - newItemLeftEdge) > CLOSE_TO_ALIGNMENT) {
+            if ([self.animationOptions linearVelocityForItem:item].x > 0){
+                newItemLeftEdge = floorf((currentItemLeftEdge + currentItemWidth) / currentItemWidth) * currentItemWidth;
+            }else if ([self.animationOptions linearVelocityForItem:item].x < 0){
+                newItemLeftEdge = floorf(currentItemLeftEdge / currentItemWidth)*currentItemWidth;
+            }
+        }
+        if (newItemLeftEdge > self.dynamicAnimator.referenceView.bounds.size.width - currentItemWidth){
+            newItemLeftEdge -= currentItemWidth;
+        }
+        if (newItemLeftEdge < 0){
+            newItemLeftEdge +=currentItemWidth;
+        }
+        if (newItemLeftEdge != currentItemLeftEdge) {
+            item.center = CGPointMake(newItemLeftEdge+currentItemWidth/2, item.center.y);
+            [self.dynamicAnimator updateItemUsingCurrentState:item];
+        }
+    }];
+}
 
 
 
