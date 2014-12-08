@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		2C641DE81A362C2200398421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641DE71A362C2200398421 /* main.m */; };
 		2C641DEB1A362C2200398421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641DEA1A362C2200398421 /* AppDelegate.m */; };
-		2C641DEE1A362C2200398421 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641DED1A362C2200398421 /* ViewController.m */; };
 		2C641DF11A362C2200398421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C641DEF1A362C2200398421 /* Main.storyboard */; };
 		2C641DF31A362C2200398421 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C641DF21A362C2200398421 /* Images.xcassets */; };
 		2C641DF61A362C2200398421 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C641DF41A362C2200398421 /* LaunchScreen.xib */; };
 		2C641E021A362C2200398421 /* DropItiOS8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641E011A362C2200398421 /* DropItiOS8Tests.m */; };
+		2C641E0D1A362C6700398421 /* DroptItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641E0C1A362C6700398421 /* DroptItViewController.m */; };
+		2C641E101A3630E200398421 /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641E0F1A3630E200398421 /* DropitBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		2C641DE71A362C2200398421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C641DE91A362C2200398421 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C641DEA1A362C2200398421 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C641DEC1A362C2200398421 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2C641DED1A362C2200398421 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2C641DF01A362C2200398421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C641DF21A362C2200398421 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C641DF51A362C2200398421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2C641DFB1A362C2200398421 /* DropItiOS8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropItiOS8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C641E001A362C2200398421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C641E011A362C2200398421 /* DropItiOS8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropItiOS8Tests.m; sourceTree = "<group>"; };
+		2C641E0B1A362C6700398421 /* DroptItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DroptItViewController.h; sourceTree = "<group>"; };
+		2C641E0C1A362C6700398421 /* DroptItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroptItViewController.m; sourceTree = "<group>"; };
+		2C641E0E1A3630E200398421 /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
+		2C641E0F1A3630E200398421 /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,11 @@
 			children = (
 				2C641DE91A362C2200398421 /* AppDelegate.h */,
 				2C641DEA1A362C2200398421 /* AppDelegate.m */,
-				2C641DEC1A362C2200398421 /* ViewController.h */,
-				2C641DED1A362C2200398421 /* ViewController.m */,
 				2C641DEF1A362C2200398421 /* Main.storyboard */,
+				2C641E0E1A3630E200398421 /* DropitBehavior.h */,
+				2C641E0F1A3630E200398421 /* DropitBehavior.m */,
+				2C641E0B1A362C6700398421 /* DroptItViewController.h */,
+				2C641E0C1A362C6700398421 /* DroptItViewController.m */,
 				2C641DF21A362C2200398421 /* Images.xcassets */,
 				2C641DF41A362C2200398421 /* LaunchScreen.xib */,
 				2C641DE51A362C2200398421 /* Supporting Files */,
@@ -219,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C641DEE1A362C2200398421 /* ViewController.m in Sources */,
 				2C641DEB1A362C2200398421 /* AppDelegate.m in Sources */,
+				2C641E101A3630E200398421 /* DropitBehavior.m in Sources */,
 				2C641DE81A362C2200398421 /* main.m in Sources */,
+				2C641E0D1A362C6700398421 /* DroptItViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
