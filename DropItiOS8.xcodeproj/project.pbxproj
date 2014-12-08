@@ -15,6 +15,7 @@
 		2C641E021A362C2200398421 /* DropItiOS8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641E011A362C2200398421 /* DropItiOS8Tests.m */; };
 		2C641E0D1A362C6700398421 /* DroptItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641E0C1A362C6700398421 /* DroptItViewController.m */; };
 		2C641E101A3630E200398421 /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641E0F1A3630E200398421 /* DropitBehavior.m */; };
+		2C641E131A364BFB00398421 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C641E121A364BFB00398421 /* BezierPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		2C641E0C1A362C6700398421 /* DroptItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroptItViewController.m; sourceTree = "<group>"; };
 		2C641E0E1A3630E200398421 /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
 		2C641E0F1A3630E200398421 /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
+		2C641E111A364BFB00398421 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
+		2C641E121A364BFB00398421 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				2C641E0F1A3630E200398421 /* DropitBehavior.m */,
 				2C641E0B1A362C6700398421 /* DroptItViewController.h */,
 				2C641E0C1A362C6700398421 /* DroptItViewController.m */,
+				2C641E111A364BFB00398421 /* BezierPathView.h */,
+				2C641E121A364BFB00398421 /* BezierPathView.m */,
 				2C641DF21A362C2200398421 /* Images.xcassets */,
 				2C641DF41A362C2200398421 /* LaunchScreen.xib */,
 				2C641DE51A362C2200398421 /* Supporting Files */,
@@ -226,6 +231,7 @@
 			files = (
 				2C641DEB1A362C2200398421 /* AppDelegate.m in Sources */,
 				2C641E101A3630E200398421 /* DropitBehavior.m in Sources */,
+				2C641E131A364BFB00398421 /* BezierPathView.m in Sources */,
 				2C641DE81A362C2200398421 /* main.m in Sources */,
 				2C641E0D1A362C6700398421 /* DroptItViewController.m in Sources */,
 			);
