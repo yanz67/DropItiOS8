@@ -62,7 +62,7 @@
             }
             if (rowIsComplete) [dropsToRemove addObject:dropsFound];
     }
-    
+    	
     if ([dropsToRemove count]) {
         for (UIView *drop in dropsToRemove){
             [self.dropitBehavior removeItem:drop];
